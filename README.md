@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 Once you have Charm, run
 ```sh
-make && pip install . && python samples/run_cp_schemes.py
+make && pip install . && python Speed_Test_FlyCred.py
 ```
 ## References
 1. Meng L, Chen L, Tian Y, et al. FEASE: Fast and Expressive Asymmetric Searchable Encryption[J]. IACR Cryptol. ePrint Arch., 2024, 2024: 54.
