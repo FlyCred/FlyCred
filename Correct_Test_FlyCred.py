@@ -36,8 +36,6 @@ def create_list_and_policy(n_1, n_2):
         kw = kw + ':' + str(random.choice(range(1, 10)))
         kw_list.append(kw)
         attr_list.append(attr)
-
-    #choice = [' and ', ' or ']
     choice = [' and ']
     indices = random.sample(range(len(word_list)), n_2)
      
@@ -71,8 +69,8 @@ def main():
     flycred = FlyCred(pairing_group)
        
     n = 5       
-    n_1 = 5
-    n_2 = 5
+    n_1 = 17
+    n_2 = 17
     B = 100/(math.log(n_1)+1)
     B =  math.ceil(B)
     print('B= {}'.format(B))
@@ -113,16 +111,6 @@ def main():
     tok, ctx = flycred.Show(pp, ipk, usk, upk, cred)
     ret1, ret2 = flycred.TokVfy(pp, ipk, tok, ctx)
     
-    
-    
-    
-    
-    
-    
-
-
-    
-
     
 if __name__ == "__main__":
     debug = True
