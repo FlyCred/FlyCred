@@ -211,8 +211,8 @@ def main():
     n = 10       
     n_1 = 17
     n_2 = 17
-    curve = 'MNT201' #MNT159, MNT201, BN254
-    lamda= 90 
+    curve = 'BN254' #MNT159, MNT201, BN254
+    lamda= 100 
     B = lamda/(math.log(n_1)+1)
     B =  math.ceil(B)
     print('Security Level = {} bit, B = {}'.format(lamda, B))
